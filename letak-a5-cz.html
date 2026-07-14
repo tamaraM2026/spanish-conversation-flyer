@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<title>Konverzační španělština · Poděbrady — leták A5</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  @page{
+    size: 210mm 148mm;
+    margin: 0;
+  }
+
+  *{ box-sizing:border-box; }
+
+  html,body{
+    margin:0;
+    padding:0;
+    background:#d6d6d6;
+  }
+
+  body{
+    font-family:'Work Sans', sans-serif;
+    color:#000;
+    display:flex;
+    justify-content:center;
+    padding:26px 12px;
+  }
+
+  .flyer{
+    width:210mm;
+    height:148mm;
+    background:#ffffff;
+    color:#000;
+    position:relative;
+    box-shadow:0 20px 50px rgba(0,0,0,0.25);
+    overflow:hidden;
+    border:1.4pt solid #000;
+    flex-shrink:0;
+  }
+
+  .flyer-inner{
+    position:absolute;
+    inset:9mm;
+    display:grid;
+    grid-template-columns:1.32fr 1fr;
+    gap:9mm;
+  }
+
+  /* ---------- LEFT COLUMN ---------- */
+  .left{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .kicker{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    font-weight:700;
+    color:#000;
+  }
+
+  .route{
+    font-family:'JetBrains Mono', monospace;
+    font-size:10px;
+    letter-spacing:0.1em;
+    color:#555;
+    margin-top:3px;
+  }
+
+  .headline{
+    margin:12px 0 0;
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    font-weight:500;
+    font-size:48px;
+    line-height:1.0;
+    color:#000;
+  }
+
+  .subhead{
+    font-family:'Fraunces', serif;
+    font-weight:700;
+    font-style:normal;
+    font-size:26px;
+    line-height:1.1;
+    margin:5px 0 0;
+    color:#000;
+  }
+
+  .lede{
+    margin-top:14px;
+    font-size:13.5px;
+    line-height:1.55;
+    color:#2a2a2a;
+    max-width:96%;
+  }
+
+  .start-banner{
+    margin-top:34px;
+    background:#000;
+    color:#fff;
+    padding:12px 16px;
+    display:inline-block;
+    font-family:'JetBrains Mono', monospace;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    align-self:flex-start;
+  }
+
+  .contact{
+    margin-top:16px;
+    border-top:1pt solid #000;
+    padding-top:12px;
+    font-size:14px;
+    line-height:1.8;
+  }
+  .contact strong{
+    font-family:'JetBrains Mono', monospace;
+    font-weight:700;
+    letter-spacing:0.03em;
+  }
+
+  /* ---------- RIGHT COLUMN ---------- */
+  .right{
+    display:flex;
+    flex-direction:column;
+    border-left:1.4pt dashed #000;
+    padding-left:9mm;
+  }
+
+  .section-label{
+    font-family:'JetBrains Mono', monospace;
+    font-size:10.5px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    font-weight:700;
+    color:#000;
+    border-bottom:1pt solid #000;
+    padding-bottom:6px;
+    margin-bottom:10px;
+  }
+
+  .why-list{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+  }
+
+  .why-item{
+    display:flex;
+    gap:8px;
+    align-items:flex-start;
+  }
+  .why-item .num{
+    font-family:'JetBrains Mono', monospace;
+    font-size:10.5px;
+    font-weight:700;
+    color:#000;
+    padding-top:1px;
+  }
+  .why-item h4{
+    margin:0 0 2px;
+    font-family:'Fraunces', serif;
+    font-size:14px;
+    font-weight:700;
+    color:#000;
+  }
+  .why-item p{
+    margin:0;
+    font-size:11px;
+    line-height:1.35;
+    color:#333;
+  }
+
+  .schedule-box{
+    margin-top:12px;
+    border:1.4pt solid #000;
+    padding:10px 12px;
+  }
+  .schedule-label{
+    font-family:'JetBrains Mono', monospace;
+    font-size:9.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:#000;
+    font-weight:700;
+    margin-bottom:4px;
+  }
+  .schedule-value{
+    font-size:16px;
+    font-weight:700;
+    color:#000;
+  }
+  .schedule-sub{
+    margin-top:3px;
+    font-size:10.5px;
+    color:#444;
+  }
+
+  .footer-note{
+    margin-top:10px;
+    font-size:9.5px;
+    color:#555;
+    font-style:italic;
+  }
+
+  @media print{
+    html,body{ background:none; padding:0; }
+    .flyer{ box-shadow:none; width:210mm; height:148mm; }
+  }
+</style>
+</head>
+<body>
+
+<div class="flyer">
+  <div class="flyer-inner">
+
+    <div class="left">
+      <div class="kicker">Konverzační španělština · Poděbrady</div>
+      <div class="route">PDY → ESP</div>
+      <h1 class="headline">¡Hola, Poděbrady!</h1>
+      <div class="subhead">Pojďme mluvit španělsky.</div>
+      <p class="lede">
+        Malá skupina, rodilý lektor, skutečná konverzace. Naučte se španělsky mluvit tak, jak se doopravdy mluví — bez zbytečného biflování gramatiky.
+      </p>
+
+      <div class="start-banner">Začínáme v pondělí 7. září</div>
+
+      <div class="contact">
+        <div><strong>Tel.:</strong> 776 706 998</div>
+        <div><strong>E-mail:</strong> tamaram.sapovalova@gmail.com</div>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="section-label">Proč se přidat</div>
+      <div class="why-list">
+        <div class="why-item">
+          <span class="num">01</span>
+          <div>
+            <h4>Rodilý mluvčí</h4>
+            <p>Autentická výslovnost a kultura přímo od lektora z Latinské Ameriky.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <span class="num">02</span>
+          <div>
+            <h4>Malá skupina</h4>
+            <p>Prostor mluvit, ne jen poslouchat — zpětná vazba na míru.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <span class="num">03</span>
+          <div>
+            <h4>Témata pro život</h4>
+            <p>Cestování, byznys i běžná konverzace.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule-box">
+        <div class="schedule-label">Rozvrh</div>
+        <div class="schedule-value">Pondělí &amp; středa · 18:00</div>
+        <div class="schedule-sub">Poděbrady · malá skupina · rychle se plní</div>
+      </div>
+
+      <div class="footer-note">Počet míst je omezený — ozvěte se co nejdřív.</div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
