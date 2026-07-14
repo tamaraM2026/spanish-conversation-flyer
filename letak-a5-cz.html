@@ -57,6 +57,7 @@
   }
   .papel-corner.tl{ top:0; left:0; }
   .papel-corner.br{ bottom:0; right:0; }
+  .papel-corner.bl{ bottom:0; left:0; }
 
   .papel-bunting{
     position:absolute;
@@ -310,6 +311,42 @@
     <circle cx="65" cy="60" r="2.2" fill="#fff"/>
     <circle cx="25" cy="50" r="2.2" fill="#fff"/>
     <circle cx="85" cy="25" r="2.2" fill="#fff"/>
+  </svg>
+
+  <svg class="papel-corner bl" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,140 L140,140 L0,0 Z" fill="#000"/>
+
+    <!-- main radiating burst -->
+    <g stroke="#fff" stroke-linecap="round">
+      <line x1="35" y1="105" x2="65" y2="105" stroke-width="8"/>
+      <line x1="35" y1="105" x2="49.1" y2="119.1" stroke-width="6"/>
+      <line x1="35" y1="105" x2="35" y2="135" stroke-width="8"/>
+      <line x1="35" y1="105" x2="20.9" y2="119.1" stroke-width="6"/>
+      <line x1="35" y1="105" x2="5" y2="105" stroke-width="8"/>
+      <line x1="35" y1="105" x2="20.9" y2="90.9" stroke-width="6"/>
+      <line x1="35" y1="105" x2="35" y2="75" stroke-width="8"/>
+      <line x1="35" y1="105" x2="49.1" y2="90.9" stroke-width="6"/>
+    </g>
+    <circle cx="35" cy="105" r="11" fill="#fff"/>
+
+    <!-- small flower rosette -->
+    <g fill="#fff">
+      <circle cx="100" cy="127" r="4"/>
+      <circle cx="93.3" cy="122.2" r="4"/>
+      <circle cx="95.9" cy="114.3" r="4"/>
+      <circle cx="104.1" cy="114.3" r="4"/>
+      <circle cx="106.7" cy="122.2" r="4"/>
+      <circle cx="100" cy="120" r="3"/>
+    </g>
+
+    <!-- diamonds -->
+    <rect x="26" y="86" width="8" height="8" fill="#fff" transform="rotate(45 30 90)"/>
+    <rect x="71" y="126" width="8" height="8" fill="#fff" transform="rotate(45 75 130)"/>
+
+    <!-- scatter dots -->
+    <circle cx="55" cy="95" r="2.2" fill="#fff"/>
+    <circle cx="15" cy="60" r="2.2" fill="#fff"/>
+    <circle cx="90" cy="135" r="2.2" fill="#fff"/>
   </svg>
 
   <!-- PAPEL PICADO BUNTING -->
