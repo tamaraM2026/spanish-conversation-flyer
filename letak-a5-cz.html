@@ -49,16 +49,6 @@
     z-index:2;
   }
 
-  .papel-corner{
-    position:absolute;
-    width:14mm;
-    height:14mm;
-    z-index:1;
-  }
-  .papel-corner.tl{ top:0; left:0; }
-  .papel-corner.br{ bottom:0; right:0; }
-  .papel-corner.bl{ bottom:0; left:0; }
-
   .papel-bunting{
     position:absolute;
     left:9mm;
@@ -230,13 +220,6 @@
     font-style:italic;
   }
 
-  .papel-medallion{
-    width:22mm;
-    height:22mm;
-    margin-top:3mm;
-    align-self:center;
-  }
-
   @media print{
     html,body{ background:none; padding:0; }
     .flyer{ box-shadow:none; width:210mm; height:148mm; }
@@ -246,115 +229,6 @@
 <body>
 
 <div class="flyer">
-
-  <!-- PAPEL PICADO CORNERS -->
-  <svg class="papel-corner tl" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0,0 L140,0 L0,140 Z" fill="#000"/>
-
-    <!-- main radiating burst -->
-    <g stroke="#fff" stroke-linecap="round">
-      <line x1="35" y1="35" x2="65" y2="35" stroke-width="8"/>
-      <line x1="35" y1="35" x2="49.1" y2="49.1" stroke-width="6"/>
-      <line x1="35" y1="35" x2="35" y2="65" stroke-width="8"/>
-      <line x1="35" y1="35" x2="20.9" y2="49.1" stroke-width="6"/>
-      <line x1="35" y1="35" x2="5" y2="35" stroke-width="8"/>
-      <line x1="35" y1="35" x2="20.9" y2="20.9" stroke-width="6"/>
-      <line x1="35" y1="35" x2="35" y2="5" stroke-width="8"/>
-      <line x1="35" y1="35" x2="49.1" y2="20.9" stroke-width="6"/>
-    </g>
-    <circle cx="35" cy="35" r="11" fill="#fff"/>
-
-    <!-- small flower rosette -->
-    <g fill="#fff">
-      <circle cx="100" cy="27" r="4"/>
-      <circle cx="93.3" cy="22.2" r="4"/>
-      <circle cx="95.9" cy="14.3" r="4"/>
-      <circle cx="104.1" cy="14.3" r="4"/>
-      <circle cx="106.7" cy="22.2" r="4"/>
-      <circle cx="100" cy="20" r="3"/>
-    </g>
-
-    <!-- diamonds -->
-    <rect x="107" y="52" width="7" height="7" fill="#fff" transform="rotate(45 110.5 55.5)"/>
-    <rect x="57" y="102" width="7" height="7" fill="#fff" transform="rotate(45 60.5 105.5)"/>
-
-    <!-- scatter dots -->
-    <circle cx="75" cy="80" r="2.2" fill="#fff"/>
-    <circle cx="115" cy="90" r="2.2" fill="#fff"/>
-    <circle cx="55" cy="115" r="2.2" fill="#fff"/>
-  </svg>
-
-  <svg class="papel-corner br" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
-    <path d="M140,140 L0,140 L140,0 Z" fill="#000"/>
-
-    <!-- main radiating burst -->
-    <g stroke="#fff" stroke-linecap="round">
-      <line x1="105" y1="105" x2="135" y2="105" stroke-width="8"/>
-      <line x1="105" y1="105" x2="119.1" y2="119.1" stroke-width="6"/>
-      <line x1="105" y1="105" x2="105" y2="135" stroke-width="8"/>
-      <line x1="105" y1="105" x2="90.9" y2="119.1" stroke-width="6"/>
-      <line x1="105" y1="105" x2="75" y2="105" stroke-width="8"/>
-      <line x1="105" y1="105" x2="90.9" y2="90.9" stroke-width="6"/>
-      <line x1="105" y1="105" x2="105" y2="75" stroke-width="8"/>
-      <line x1="105" y1="105" x2="119.1" y2="90.9" stroke-width="6"/>
-    </g>
-    <circle cx="105" cy="105" r="11" fill="#fff"/>
-
-    <!-- small flower rosette -->
-    <g fill="#fff">
-      <circle cx="40" cy="127" r="4"/>
-      <circle cx="33.3" cy="122.2" r="4"/>
-      <circle cx="35.9" cy="114.3" r="4"/>
-      <circle cx="44.1" cy="114.3" r="4"/>
-      <circle cx="46.7" cy="122.2" r="4"/>
-      <circle cx="40" cy="120" r="3"/>
-    </g>
-
-    <!-- diamonds -->
-    <rect x="27" y="82" width="7" height="7" fill="#fff" transform="rotate(45 30.5 85.5)"/>
-    <rect x="77" y="32" width="7" height="7" fill="#fff" transform="rotate(45 80.5 35.5)"/>
-
-    <!-- scatter dots -->
-    <circle cx="65" cy="60" r="2.2" fill="#fff"/>
-    <circle cx="25" cy="50" r="2.2" fill="#fff"/>
-    <circle cx="85" cy="25" r="2.2" fill="#fff"/>
-  </svg>
-
-  <svg class="papel-corner bl" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0,140 L140,140 L0,0 Z" fill="#000"/>
-
-    <!-- main radiating burst -->
-    <g stroke="#fff" stroke-linecap="round">
-      <line x1="35" y1="105" x2="65" y2="105" stroke-width="8"/>
-      <line x1="35" y1="105" x2="49.1" y2="119.1" stroke-width="6"/>
-      <line x1="35" y1="105" x2="35" y2="135" stroke-width="8"/>
-      <line x1="35" y1="105" x2="20.9" y2="119.1" stroke-width="6"/>
-      <line x1="35" y1="105" x2="5" y2="105" stroke-width="8"/>
-      <line x1="35" y1="105" x2="20.9" y2="90.9" stroke-width="6"/>
-      <line x1="35" y1="105" x2="35" y2="75" stroke-width="8"/>
-      <line x1="35" y1="105" x2="49.1" y2="90.9" stroke-width="6"/>
-    </g>
-    <circle cx="35" cy="105" r="11" fill="#fff"/>
-
-    <!-- small flower rosette -->
-    <g fill="#fff">
-      <circle cx="100" cy="127" r="4"/>
-      <circle cx="93.3" cy="122.2" r="4"/>
-      <circle cx="95.9" cy="114.3" r="4"/>
-      <circle cx="104.1" cy="114.3" r="4"/>
-      <circle cx="106.7" cy="122.2" r="4"/>
-      <circle cx="100" cy="120" r="3"/>
-    </g>
-
-    <!-- diamonds -->
-    <rect x="26" y="86" width="8" height="8" fill="#fff" transform="rotate(45 30 90)"/>
-    <rect x="71" y="126" width="8" height="8" fill="#fff" transform="rotate(45 75 130)"/>
-
-    <!-- scatter dots -->
-    <circle cx="55" cy="95" r="2.2" fill="#fff"/>
-    <circle cx="15" cy="60" r="2.2" fill="#fff"/>
-    <circle cx="90" cy="135" r="2.2" fill="#fff"/>
-  </svg>
 
   <!-- PAPEL PICADO BUNTING -->
   <svg class="papel-bunting" viewBox="0 0 1870 240" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
@@ -480,47 +354,6 @@
       </div>
 
       <div class="footer-note">Počet míst je omezený — ozvěte se co nejdřív.</div>
-
-      <svg class="papel-medallion" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="120" cy="120" r="110" fill="#000"/>
-        <circle cx="120" cy="120" r="100" fill="none" stroke="#fff" stroke-width="2"/>
-
-        <!-- sunburst edge -->
-        <g fill="#fff">
-          <rect x="117" y="8" width="6" height="18" transform="rotate(0 120 120)"/>
-          <rect x="117" y="8" width="6" height="18" transform="rotate(22.5 120 120)"/>
-          <rect x="117" y="8" width="6" height="18" transform="rotate(45 120 120)"/>
-          <rect x="117" y="8" width="6" height="18" transform="rotate(67.5 120 120)"/>
-          <rect x="117" y="8" width="6" height="18" transform="rotate(90 120 120)"/>
-          <rect x="117" y="8" width="6" height="18" transform="rotate(112.5 120 120)"/>
-          <rect x="117" y="8" width="6" height="18" transform="rotate(135 120 120)"/>
-          <rect x="117" y="8" width="6" height="18" transform="rotate(157.5 120 120)"/>
-          <rect x="117" y="8" width="6" height="18" transform="rotate(180 120 120)"/>
-          <rect x="117" y="8" width="6" height="18" transform="rotate(202.5 120 120)"/>
-          <rect x="117" y="8" width="6" height="18" transform="rotate(225 120 120)"/>
-          <rect x="117" y="8" width="6" height="18" transform="rotate(247.5 120 120)"/>
-          <rect x="117" y="8" width="6" height="18" transform="rotate(270 120 120)"/>
-          <rect x="117" y="8" width="6" height="18" transform="rotate(292.5 120 120)"/>
-          <rect x="117" y="8" width="6" height="18" transform="rotate(315 120 120)"/>
-          <rect x="117" y="8" width="6" height="18" transform="rotate(337.5 120 120)"/>
-        </g>
-
-        <!-- flower ring -->
-        <g fill="#fff">
-          <circle cx="185" cy="120" r="16"/>
-          <circle cx="165.96" cy="165.96" r="16"/>
-          <circle cx="120" cy="185" r="16"/>
-          <circle cx="74.04" cy="165.96" r="16"/>
-          <circle cx="55" cy="120" r="16"/>
-          <circle cx="74.04" cy="74.04" r="16"/>
-          <circle cx="120" cy="55" r="16"/>
-          <circle cx="165.96" cy="74.04" r="16"/>
-        </g>
-
-        <!-- center -->
-        <circle cx="120" cy="120" r="26" fill="#fff"/>
-        <circle cx="120" cy="120" r="8" fill="#000"/>
-      </svg>
     </div>
 
   </div>
